@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="theme-color"
+    content="#05070b"
+  >
+
+  <title>JARVIS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app-shell">
+
+    <header class="topbar">
+
+      <div class="brand">
+        <div class="brand-mark">
+          <span></span>
+        </div>
+
+        <div>
+          <div class="brand-name">JARVIS</div>
+          <div class="brand-status">
+            <span class="status-dot"></span>
+            ONLINE
+          </div>
+        </div>
+      </div>
+
+      <button
+        id="clearChatButton"
+        class="icon-button"
+        aria-label="Clear conversation"
+      >
+        ⌫
+      </button>
+
+    </header>
+
+
+    <section class="hero">
+
+      <div class="eyebrow">
+        PERSONAL INTELLIGENCE
+      </div>
+
+      <h1>
+        Your personal
+        <span>intelligence layer.</span>
+      </h1>
+
+      <p>
+        Ask JARVIS anything. Think, plan, calculate, remember,
+        and get things done.
+      </p>
+
+    </section>
+
+
+    <section class="command-panel">
+
+      <div class="panel-label">
+        COMMAND INTERFACE
+      </div>
+
+      <div
+        id="conversation"
+        class="conversation"
+      ></div>
+
+      <div class="composer">
+
+        <button
+          id="voiceButton"
+          class="voice-button"
+          aria-label="Voice input"
+        >
+          <span class="mic-symbol">●</span>
+        </button>
+
+        <textarea
+          id="messageInput"
+          rows="1"
+          placeholder="Talk to JARVIS..."
+          autocomplete="off"
+        ></textarea>
+
+        <button
+          id="sendButton"
+          class="send-button"
+          aria-label="Send"
+        >
+          →
+        </button>
+
+      </div>
+
+      <div
+        id="voiceStatus"
+        class="voice-status"
+      ></div>
+
+    </section>
+
+
+    <section class="quick-section">
+
+      <div class="section-heading">
+        <span>QUICK COMMANDS</span>
+      </div>
+
+      <div class="quick-grid">
+
+        <button
+          class="quick-card"
+          data-command="What can you do?"
+        >
+          <strong>CAPABILITIES</strong>
+          <span>What can you do?</span>
+        </button>
+
+        <button
+          class="quick-card"
+          data-command="What time is it?"
+        >
+          <strong>TIME</strong>
+          <span>Current time</span>
+        </button>
+
+        <button
+          class="quick-card"
+          data-command="Calculate 245 * 17"
+        >
+          <strong>CALCULATOR</strong>
+          <span>245 × 17</span>
+        </button>
+
+        <button
+          class="quick-card"
+          data-command="Show my tasks"
+        >
+          <strong>TASKS</strong>
+          <span>View tasks</span>
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <section class="dashboard">
+
+      <div class="section-heading">
+        <span>SYSTEM</span>
+      </div>
+
+      <div class="dashboard-grid">
+
+        <article class="dashboard-card">
+
+          <div class="card-top">
+            <span>MEMORY</span>
+            <span class="card-indicator"></span>
+          </div>
+
+          <strong id="memoryCount">0</strong>
+
+          <small>
+            stored memories
+          </small>
+
+        </article>
+
+
+        <article class="dashboard-card">
+
+          <div class="card-top">
+            <span>TASKS</span>
+            <span class="card-indicator"></span>
+          </div>
+
+          <strong id="taskCount">0</strong>
+
+          <small>
+            active tasks
+          </small>
+
+        </article>
+
+
+        <article class="dashboard-card">
+
+          <div class="card-top">
+            <span>AI BRAIN</span>
+            <span class="card-indicator"></span>
+          </div>
+
+          <strong>READY</strong>
+
+          <small>
+            cloud intelligence
+          </small>
+
+        </article>
+
+
+        <article class="dashboard-card">
+
+          <div class="card-top">
+            <span>VOICE</span>
+            <span class="card-indicator"></span>
+          </div>
+
+          <strong>READY</strong>
+
+          <small>
+            speech interface
+          </small>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section class="memory-section">
+
+      <div class="section-heading">
+        <span>MEMORY</span>
+      </div>
+
+      <div
+        id="memoryList"
+        class="memory-list"
+      ></div>
+
+    </section>
+
+
+    <section class="task-section">
+
+      <div class="section-heading">
+        <span>TASKS</span>
+      </div>
+
+      <div
+        id="taskList"
+        class="task-list"
+      ></div>
+
+    </section>
+
+
+    <footer>
+      JARVIS v0.2.0
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+                  </html>
