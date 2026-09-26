@@ -1,0 +1,20 @@
+{
+  "name": "jarvis-v0-2",
+  "version": "0.2.0",
+  "private": true,
+  "description": "JARVIS personal AI assistant v0.2",
+  "scripts": {
+    "build": "echo JARVIS web application ready",
+    "android:add": "npx cap add android",
+    "android:sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@capacitor/splash-screen": "^7.0.3",
+    "@capacitor/status-bar": "^7.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
