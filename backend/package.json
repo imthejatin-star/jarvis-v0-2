@@ -1,0 +1,14 @@
+{
+  "name": "jarvis-v0-2-backend",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "openai": "^5.19.1"
+  }
+}
