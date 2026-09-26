@@ -1,0 +1,20 @@
+{
+  "appId": "com.jarvis.personal.v02",
+  "appName": "JARVIS",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1000,
+      "launchAutoHide": true,
+      "backgroundColor": "#05070b",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#05070b"
+    }
+  }
+}
